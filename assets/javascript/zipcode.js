@@ -1,7 +1,7 @@
 //fuction to put html to display
 function displayWeatherInfo(zipcode) {
 	var zipCodeSearch = $(this).attr("data-name");
-	var queryURL = "http://api.wunderground.com/api/a2bdd3389a6bb0c6/hourly/q/" + zipcode +".json";
+	var queryURL = "https://api.wunderground.com/api/a2bdd3389a6bb0c6/hourly/q/" + zipcode +".json";
 //creating an ajax call for specific info
 	$.ajax({
           url: queryURL,
