@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cozy at Home</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+
+<div class="container col s12 m12 l12 stay-in-main-box">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo center">
+				<img src="assets/images/logo.png" class="logoMain" alt="Day Tripper logo">
+			</a>
+			 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a class="nav-link" href="index.html">Main Page</a></li>
+					<li><a class="nav-link" href="stayin.html"> Stay In </a></li>
+					<li><a class="nav-link" href="goout.html"> Go Out </a></li>
+					<li><a class="nav-link" href="map.html" target="_blank"> Where Am I? </a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="stayin.html"> Stay In </a></li>
+					<li><a href="goout.html"> Go Out </a></li>
+				</ul>
+		</div>
+	</nav>
+
+	<div class="main-div">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h1>What do you want to do</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class=" panel-boxes">
+					<div class="panel-heading">SEARCH FOR GENRE OR MUSICAL ARTIST PLAYLIST</div>
+					<div class="panel-body">
+						<form onsubmit="go_get(); return false;" >
+ 							<input type="text"  id="yourtextfield"/>
+ 							<input type="submit" id="musicSearch" value="Search Playlists" />
+						</form>
+
+					<iframe id="youriframe"></iframe>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class="panel-boxes" id="movie-search-box">
+				  <div class="panel-heading">SEARCH FOR A MOVIE OR TV SHOW ONLINE</div>
+				  <div class="panel-body">
+						<form>
+ 							<input type="text"  id="showSearch">
+								<input type="radio" name="show-search" id="movie-button" checked="checked">
+									<label for="movie-button">Movie</label><br>
+								<input type="radio" name="show-search" id="tv-button">
+									<label for="tv-button">TV Show</label><br>
+ 							<input type="submit" class="btn" id="movieSearch">
+						</form>
+					  <div class="panel-body dynDivContainer" id="showOutput" ></div>
+				  </div>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s12 m12 l12 xl12">
+				<div class=" panel-boxes">
+					<div class="panel-heading">WHAT WOULD YOU LIKE TO COOK?</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<input type="text" class="form-control" id="recipeInput">
+							<button type="search" class="btn" id="recipeSearch" style="margin-right: 20px; margin-left: 15px">Search</button>
+       					</div>  
+						<div class="panel-body dynDivContainer" id="recipeOutput" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<hr class="spacer">
+	</div>
+	
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+	<script src="assets/javascript/recipe.js"></script>
+	<script src="assets/javascript/youtube.js"></script>
+	<script src="assets/javascript/moviestreaming.js"></script>
+
+</body>
+</html>

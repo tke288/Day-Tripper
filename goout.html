@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Out of the House</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+	
+<div class="container col s12 m12 l12 main-box">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo center">
+				<img src="assets/images/logo.png" class="logoMain" alt="Day Tripper logo">
+			</a>
+			 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a class="nav-link" href="index.html">Main Page</a></li>
+					<li><a class="nav-link" href="stayin.html"> Stay In </a></li>
+					<li><a class="nav-link" href="goout.html"> Go Out </a></li>
+					<li><a class="nav-link" href="map.html" target="_blank"> Where Am I? </a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="stayin.html"> Stay In </a></li>
+					<li><a href="goout.html"> Go Out </a></li>
+					<li><a href="map.html" target="_blank"> Where Am I? </a></li>
+				</ul>
+		</div>
+	</nav>
+		
+	<div id="go-out-div" class="main-div">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<div class="panel-boxes">
+					<div class="form-group">
+								<label for="search">
+									<h2>What is your zip code?</h2><br>
+								</label>
+						<input class="form-control" id="zipInput">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class="panel-boxes">
+				  <div class="panel-heading">SEARCH FOR LOCAL MOVIES NOW PLAYING<hr></div>
+				  <div class="panel-body">
+						<div class="form-group">
+							
+							<button type="search" class="btn" id="movieZipSearch" style="margin-right: 20px; margin-left: 15px">Search</button>
+       					</div>  
+						<div class="panel-body dynDivContainer" id="movieZipOutput" ></div>	
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class=" panel-boxes">
+					<div class="panel-heading">SEARCH FOR LOCAL RESTAURANTS</div><hr>
+					<div class="panel-body">
+						<div class="form-group">
+           	 				
+            				<label for="search">
+									<h2>What is your zip code?</h2><br>
+								</label>
+						<input class="form-control" id="zipInput">
+            				<button type="search" class="btn" id="deliverySearch" style="margin-right: 20px; margin-left: 15px">Search</button>
+        				</div> 
+						<div class="panel-body dynDivContainer" id="deliveryOutput"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class=" panel-boxes">
+					<div class="panel-heading">INSERT OUTDOOR ACTIVITIES SEARCH HERE</div>
+					<div class="panel-body"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<div class=" panel-boxes">
+					<div class="panel-heading">INSERT EVENT BRITE BUTTONS HERE</div>
+					<div class="panel-body"></div>
+				</div>
+			</div>
+		</div>
+		<hr class="spacer">
+	</div>
+	
+	
+	
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+	<script src="assets/javascript/localmovies.js"></script>
+	<script src="assets/javascript/restaurant.js"></script>
+
+</body>
+</html>

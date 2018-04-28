@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Sign-Up Today!</title>
+
+    <!-- Bootstrap / Materialize / Style -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+  
+  </head>
+
+  <body>
+    <div class="container main-box">
+      <img class="logoMain" src="assets/images/logo.png" alt="Day Tripper Logo">
+      <br>
+      <!-- Activity Form-->
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+             <form>
+               <div class="form-group">
+                  <label for="date-input">Date:</label>
+                  <input class="form-control" id="date-input" type="date" placeholder="01/01/2018" required="required">
+                </div>
+                <div class="form-group">
+                  <label for="name-input">Name:</label>
+                  <input class="form-control" id="name-input" type="text" placeholder="John Smith" required="required">
+                </div>
+                <div class="form-group">
+                  <label for="activity-input">Activity:</label>
+                  <input class="form-control" id="activity-input" type="text" placeholder="What activity did you chose?" required="required">
+                </div>
+                <div class="form-group">
+                  <label for="review-input">Review:</label>
+                  <textarea class="materialize-textarea form-control" id="review-input" type="text"  name="message" placeholder="Did you enjoy your pick?  Let others know!" required="required"></textarea>
+                </div>
+                <input class="btn" type="submit" name="submit" id="submit-input">
+             </form>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recent User Activity Table-->
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              
+               <table class="table table-striped" id="new-review">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Review</th>
+                  </tr>
+                </thead>
+               </table>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+     <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/log.js"></script>
+  
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+  </body>
+
+</html>

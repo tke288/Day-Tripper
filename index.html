@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DayTripper</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+
+</head>
+
+<body>
+<div class="container main-box">
+		
+	<img class="logoMain" src="assets/images/logo.png" alt="Day Tripper Logo">
+	<p><span id="slogan">Let us help you plan your day out...<em>or in.</em></span></p>
+
+	<div class="container" >
+    	<div class="col-sm-12">
+          <div class="panel panel-default">
+			  <div class="panel-heading" id="home-header-box">
+				  <h3>What's the weather like?</h3>
+			  		<p>Enter your zip code below and we'll tell you!</p><br>
+				  <div class="form-group">
+                		<label for="search">
+							<p>What is your Zip Code?</p>
+                		</label>
+                		<input type="text" class="form-control" id="zipcodeInput">
+              		</div>
+              		<button type="search" class="btn" id="zipcodeSearch" style="margin-right: 20px; margin-left: 15px">Search</button><br>
+			  </div>
+          </div>
+		</div>
+	</div>
+
+	
+	<hr>
+	<div class="panel-body" id="weather"></div>
+
+	<div class="container" class="col-sm-12">
+	<div id="button-box">
+	    <button id="stayin"><a href="stayin.html"><span class="inoutbuttons"><p>STAY IN</p></span></a></button>
+		<button id="goout"><a href="goout.html"><span class="inoutbuttons"><p>GO OUT</p></span></a></button>
+	</div>
+	</div>
+  	<script
+ 	 	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+	<script src=assets/javascript/zipcode.js></script>
+	<script src=assets/javascript/map.js></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBr0JPLjGiIEkdpGe60caL1HkansZ5Wf9w&libraries=places&callback=initMap"></script>
+
+</body>
+</html>

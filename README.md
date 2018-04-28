@@ -1,1 +1,1 @@
-# Day-Tripper
+# DayTripper

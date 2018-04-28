@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* CSS Document */
+/* 
+========================================
+  Custom Body
+========================================
+*/
+
+html {
+  height: 100%;
+}
+body {
+	background-image: url(../images/stayorgo-2020x1226.png);
+ 	background-size: 100%;
+  	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	height: auto;
+	color: white;
+	background-attachment: fixed;
+}
+/* 
+========================================
+  Typogrophy
+========================================
+*/
+h1 {
+	color: #4c1a52;
+	font: 700 36px/40px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+h2 {
+	color: #4c1a52;
+	font: 700 18px/22px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px;
+}
+h3 {
+	color: #4c1a52;
+	font: 700 26px/30px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+.inoutbuttons {
+	text-align: center;
+	color: #F6EEF0;
+	font: 300 14px/16px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+p {
+	color: #4c1a52;
+	font: 400 14px/16px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px;
+
+}
+em {
+	font-style: italic;
+}
+
+nav {
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+}
+.nav-link {
+	background-color: #D4CFCF;
+	background-color: rgba(212,207,207,.4);
+	font: 400 18px/22px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	border-radius: 15px;
+}
+
+.new-review {
+	color: black;
+}
+a {
+	color: #4c1a52;
+	font: 700 14px/16px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px;
+}
+a:hover {
+	color: #2E0D32;
+	underline: thin;
+	}
+ul,
+li {
+	white-space: normal;
+}
+li.loopText {
+	display: block;
+	overflow-wrap: break-all;
+	padding: 5px;
+	margin: 1px auto;
+	list-style-type: circle;
+}
+label {
+	color: white;
+}
+.wordBreak {
+	white-space: normal;
+}
+.small {
+	font-size: 12px/14px;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 700;
+}
+.movie-title {
+	font-size: 22px/24px;
+}
+.inline-button {
+	display: inline-block;
+	margin: 10px;
+}
+/* 
+========================================
+  Grid/Style
+========================================
+*/
+.panel-boxes {
+	display: inline-block;
+	position: relative;
+	background-color: #D4CFCF;
+	background-color: rgba(212,207,207,.4);
+	border-radius: 15px;
+	margin: 20px auto;
+	text-align: center;
+	width: 90%;
+}
+#home-header-box,
+#goout,
+#stayin {
+	border-radius: 15px;
+}
+input {
+	padding: 5px;
+	margin: 10px auto;
+}
+#youriframe {
+	padding: 2px;
+	margin 10px auto;
+	width: 100%;
+	height: 100%;
+}
+hr.spacer {
+	padding: 10px;
+	margin: 20px;
+	border: none;
+}
+li {
+	display: inline-block;
+}
+a {
+	padding: 10px;
+	margin: 10px auto;
+}
+.nav-link {
+	margin: 5px 5px 5px 0;
+}
+.main-div {
+	position: relative;
+	top: 60px;
+}
+.weather-header {
+	text-align: center;
+	position: absolute;
+}
+.navbar {
+	background: none;
+	border: none;
+}
+.container {
+	background: none;
+	top: 20px;
+	margin: 40px auto;
+	height: auto;
+	padding: 5px;
+	text-align: center;
+}
+.logoMain {
+	width: 240px;
+	height: auto;
+	position: relative;
+	display: inline-block;
+	margin: 30px auto;
+}
+.main-box {
+	background-color: #79a9be;
+	background-color: rgba(121,169,190, .6);
+	top: 20px;
+	margin: 40px auto;
+	height: auto;
+	padding: 10px;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+}
+.stay-in-main-box {
+	background-color: #EB6474;
+	background-color: rgba(235,100,116,.60);
+	border-radius: 15px;
+}
+#weather {
+	margin: 10px auto;
+	padding: 10px;
+	white-space:nowrap;
+  	overflow:auto;
+}
+.hourDiv {
+	border: solid;
+	border-width: medium;
+	border-radius: 15px;
+	padding:5px;
+	margin: 10px 5px;
+	border-color: #4c1a52;
+	display: inline-block;
+	background-color: #E9E6E6;
+	background-color: rgba(233,230,230,.7);
+	position: relative;
+	top: 30px;
+	width: 160px;
+}
+#button-box {
+	position: relative;
+	margin: 10px;
+	padding: 30px;
+}
+#stayin {
+	padding: 15px;
+	display: inline-block;
+	margin: 10px 15px 10px auto;
+}
+.dynDivContainer {
+	margin: 10px auto;
+	padding: 10px;
+	white-space: nowrap;
+	overflow: auto;
+	width: 100%;
+	word-wrap: break-word;
+	display: block;
+	
+}
+.dynCard {
+	border: solid;
+	border-width: medium;
+	border-radius: 15px;
+	padding:5px;
+	margin: 10px 5px;
+	border-color: #4c1a52;
+	display: inline-block;
+	background-color: #E9E6E6;
+	background-color: rgba(233,230,230,.7);
+	position: relative;
+	vertical-align: top;
+	width: 200px;
+	overflow-wrap: break-all;
+}
+.full {
+	width: 100%;
+}
+#goout {
+	padding: 15px;
+	display: inline-block;
+	margin: 10px 15px 10px auto;
+}
+#home-header-box {
+	text-align: center;
+}
+#slogan {
+	font-weight: 700;
+	font-size: 20px;
+}
+.spacers {
+	border: none;
+}
+input[type="radio-button"]{
+    -webkit-appearance: radio;
+	margin: 10px;
+}
+.btn {
+	margin: 10px;
+}
+#zipInput {
+	width: 300px;
+	display: block;
+	margin: 10px auto;
+	color: white;
+	font-size: 22px/24px;
+	font-weight: 700;
+	border-bottom-color: white;
+}
+form {
+	align-content: center;
+}
+/* 
+========================================
+Log Page
+========================================
+*/
+.validate {
+	color: black;
+}
+/* 
+========================================
+  Images
+========================================
+*/
+.recipeImage {
+	width: 150px;
+	height: auto;
+}
