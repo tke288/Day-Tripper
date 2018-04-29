@@ -302,6 +302,15 @@ Log Page
 .validate {
 	color: black;
 }
+
+table {
+	table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: black;
+    }
+
 /* 
 ========================================
   Images
