@@ -17,100 +17,96 @@
 <div class="container col s12 m12 l12 main-box">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="index.html" class="brand-logo center">
-				<img src="assets/images/logo.png" class="logoMain" alt="Day Tripper logo">
-			</a>
-			 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<img src="assets/images/logo.png" class="brand-logo center logoMain" alt="Day Tripper logo">
+				<a href="#" data-activates="mobil-demo-out" class="button-collapse"><img class="nav-icon" src="assets/images/menu-alt-512.png"></a>
+				<ul id="nav-mobile-out" class="right hide-on-med-and-down">
 					<li><a class="nav-link" href="index.html">Main Page</a></li>
-					<li><a class="nav-link" href="stayin.html"> Stay In </a></li>
-					<li><a class="nav-link" href="goout.html"> Go Out </a></li>
-					<li><a class="nav-link" href="map.html" target="_blank"> Where Am I? </a></li>
+					<li><a class="nav-link" href="stayin.html">Stay In</a></li>
+					<li><a class="nav-link" href="goout.html">Go Out</a></li>
+					<li><a class="nav-link" href="activitylog.html">Reviews</a></li>
 				</ul>
-				<ul class="side-nav" id="mobile-demo">
+				<ul class="side-nav" id="mobil-demo-out">
 					<li><a href="index.html">Main Page</a></li>
-					<li><a href="stayin.html"> Stay In </a></li>
-					<li><a href="goout.html"> Go Out </a></li>
-					<li><a href="map.html" target="_blank"> Where Am I? </a></li>
+					<li><a href="stayin.html">Stay In</a></li>
+					<li><a href="goout.html">Go Out</a></li>
+					<li><a class="nav-link" href="activitylog.html">Reviews</a></li>
 				</ul>
 		</div>
 	</nav>
 		
 	<div id="go-out-div" class="main-div">
-		<div class="row">
-			<div class="col s12 m12 l12">
-				<div class="panel-boxes">
+		
+	<div class="row">
+		<div class="col s12 m12 l12 xl12">
+			<div class="panel-boxes">
+			  <div class="panel-heading">Enter your zip code below:</div><br>
+			  <div class="panel-body">
 					<div class="form-group">
-								<label for="search">
-									<h2>What is your zip code?</h2><br>
-								</label>
-						<input class="form-control" id="zipInput">
-					</div>
+						<input type="text" name="zipCodeEntry" class="form-control" id="zipInput" placeholder="">
+						</div>
 				</div>
 			</div>
 		</div>
-		
-		<div class="row">
-			<div class="col s12 m12 l12 xl12">
-				<div class="panel-boxes">
-				  <div class="panel-heading">SEARCH FOR LOCAL MOVIES NOW PLAYING<hr></div>
-				  <div class="panel-body">
-						<div class="form-group">
-							
-							<button type="search" class="btn" id="movieZipSearch" style="margin-right: 20px; margin-left: 15px">Search</button>
-       					</div>  
-						<div class="panel-body dynDivContainer" id="movieZipOutput" ></div>	
-				  </div>
-				</div>
+	</div>	
+
+	<div class="row">
+		<div class="col s12 m12 l12 xl12">
+			<div class="panel-boxes">
+			  <div class="panel-heading">SEARCH FOR LOCAL MOVIES NOW PLAYING<hr></div>
+			  <div class="panel-body">
+					<div class="form-group">
+						<button type="search" class="btn" id="movieZipSearch" style="margin-right: 20px; margin-left: 15px">Search</button>
+					</div>  
+					<div class="dynDivContainer" id="movieZipOutput" ></div>	
+			  </div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s12 m12 l12 xl12">
-				<div class=" panel-boxes">
-					<div class="panel-heading">SEARCH FOR LOCAL RESTAURANTS</div><hr>
-					<div class="panel-body">
-						<div class="form-group">
-           	 				
-            				<label for="search">
-									<h2>What is your zip code?</h2><br>
-								</label>
-						<input class="form-control" id="zipInput">
-            				<button type="search" class="btn" id="deliverySearch" style="margin-right: 20px; margin-left: 15px">Search</button>
-        				</div> 
-						<div class="panel-body dynDivContainer" id="deliveryOutput"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col s12 m12 l12 xl12">
-				<div class=" panel-boxes">
-					<div class="panel-heading">INSERT OUTDOOR ACTIVITIES SEARCH HERE</div>
-					<div class="panel-body"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m12 l12 xl12">
-				<div class=" panel-boxes">
-					<div class="panel-heading">INSERT EVENT BRITE BUTTONS HERE</div>
-					<div class="panel-body"></div>
-				</div>
-			</div>
-		</div>
-		<hr class="spacer">
 	</div>
-	
-	
+	<div class="row">
+		<div class="col s12 m12 l12 xl12">
+			<div class=" panel-boxes">
+				<div class="panel-heading">SEARCH FOR LOCAL RESTAURANTS<hr></div>
+				<div class="panel-body">
+				<div class="form-group">
+					<button type="search" class="btn" id="deliverySearch" style="margin-right: 20px; margin-left: 15px">Search</button>
+				<div class="dynDivContainer" id="deliveryOutput"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m12 l12 xl12">
+			<div class=" panel-boxes">
+				<div class="panel-heading">SEARCH FOR LOCAL MUSIC EVENTS<hr></div>
+				<div class="panel-body">
+					 <div class="form-group">
+						<button type="search" class="btn" id="eventfulSearch">Search</button>
+						<div class="dynDivContainer" id="eventfulOutput"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<hr class="spacer">
+</div>
 	
 	<script
   		src="https://code.jquery.com/jquery-3.2.1.min.js"
   		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/log.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 	<script src="assets/javascript/localmovies.js"></script>
-	<script src="assets/javascript/restaurant.js"></script>
+	<script src="assets/javascript/restaurant.js" ></script>
+	<script src="assets/javascript/outdoors.js"></script>
+	<script src="assets/javascript/eventful.js"></script>
+	<script>  $(".button-collapse").sideNav();</script>
+
 
 </body>
 </html>

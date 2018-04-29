@@ -7,7 +7,7 @@ var streamShowType = "";
 
 function showStreamSearch() {
 
-	var queryURL = "http://api-public.guidebox.com/v2/search?api_key=1c94ca8b2662e97be6c424070e65bb62ea577bf4&type=" + showType + "&field=title&query=" + showSearchInput;
+	var queryURL = "https://api-public.guidebox.com/v2/search?api_key=1c94ca8b2662e97be6c424070e65bb62ea577bf4&type=" + showType + "&field=title&query=" + showSearchInput;
 
 	  $.ajax({
 		url: queryURL,
@@ -22,7 +22,7 @@ function showStreamSearch() {
 			  console.log(movieID);
 		  };
 			  
-			var streamQueryURL = "http://api-public.guidebox.com/v2/" + streamShowType + "/" + movieID + "?api_key=1c94ca8b2662e97be6c424070e65bb62ea577bf4&limit=10";
+			var streamQueryURL = "https://api-public.guidebox.com/v2/" + streamShowType + "/" + movieID + "?api_key=1c94ca8b2662e97be6c424070e65bb62ea577bf4&limit=10";
 
 				$.ajax({
 					url: streamQueryURL,
@@ -144,7 +144,7 @@ $("#showSearch").keyup(function(event) {
 function locate(zipcode){
 	console.log(zipcode)
 	var SearchTerm = $(this).attr("data-name");
-	var queryURL = "http://autocomplete.wunderground.com/aq?query=" + zipcode;
+	var queryURL = "https://autocomplete.wunderground.com/aq?query=" + zipcode;
 
 	$.ajax({
           url: queryURL,
