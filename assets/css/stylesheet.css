@@ -320,3 +320,15 @@ table {
 	width: 150px;
 	height: auto;
 }
+.rImage {
+	width: 80%;
+	height: auto;
+	margin: 7px auto;
+}
+.nav-icon {
+	height: 2em;
+	position: relative;
+	top: -0.0625em;
+	vertical-align: middle;
+	width: 2em;
+}

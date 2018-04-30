@@ -17,7 +17,26 @@
 
   <body>
     <div class="container main-box">
-      <img class="logoMain" src="assets/images/logo.png" alt="Day Tripper Logo">
+     <nav>
+		<div class="nav-wrapper">
+			<img src="assets/images/logo.png" class="brand-logo center logoMain" alt="Day Tripper logo">
+
+			 <a href="#" data-activates="mobile-demo" class="button-collapse"><img class="nav-icon" src="assets/images/menu-alt-512.png"><i class="material-icons"></i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+
+					<li><a class="nav-link" href="index.html">Main Page</a></li>
+					<li><a class="nav-link" href="stayin.html">Stay In</a></li>
+					<li><a class="nav-link" href="goout.html">Go Out</a></li>
+					<li><a class="nav-link" href="activitylog.html">Reviews</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="stayin.html">Stay In</a></li>
+					<li><a href="goout.html">Go Out</a></li>
+					<li><a class="nav-link" href="activitylog.html">Reviews</a></li>
+				</ul>
+		</div>
+	</nav>
       <br>
       <!-- Activity Form-->
       <div class="container">
@@ -79,6 +98,9 @@
   
   <!-- firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+  <script>  $(".button-collapse").sideNav();</script>
+
 
 
   </body>
